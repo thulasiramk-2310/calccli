@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calccli"
+version = "0.1.0"
+description = "A tiny CLI calculator providing add, sub, mul, div via Typer."
+readme = "README.md"
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+  "typer[all]>=0.9.0",
+  "rich>=13.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://example.com/calccli"
+
+[project.scripts]
+calccli = "calccli.main:main"
