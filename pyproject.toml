@@ -8,17 +8,20 @@ version = "0.1.0"
 description = "A tiny CLI calculator providing add, sub, mul, div via Typer."
 readme = "README.md"
 authors = [
-  { name = "Your Name", email = "you@example.com" }
+  { name = "thulasiramk", email = "thulasiramk.aiml2024@citchennai.net" }
 ]
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
 dependencies = [
-  "typer[all]>=0.9.0",
+  # Use plain typer; the [all] extra was removed / not provided in newer versions.
+  "typer>=0.9.0",
   "rich>=13.0.0",
+  # Optional detection of shell for better completion; uncomment if desired:
+  # "shellingham>=1.5.0",
 ]
 
 [project.urls]
-"Homepage" = "https://example.com/calccli"
+"Homepage" = "https://github.com/thulasiramk-2310/calccli"
 
 [project.scripts]
 calccli = "calccli.main:main"
